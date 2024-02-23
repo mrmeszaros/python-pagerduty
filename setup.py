@@ -1,9 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from setuptools import setup, find_packages
 
-import os
-execfile(os.path.join('pagerduty', 'version.py'))
+from pathlib import Path
+exec(open(Path("pagerduty", "version.py")).read())
 
 try:
     long_description = open("README.md").read()
