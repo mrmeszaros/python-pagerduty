@@ -166,7 +166,7 @@ class PagerDuty(object):
         for k, v in kwargs.items():
             if v is not None:
                 event[k] = v
-        encoded_event = json.dumps(event)
+        encoded_event = json.dumps(event).encode('utf-8')
         try:
             res = urlopen(self.api_endpoint, encoded_event, self.timeout)
         except HTTPError as exc:
