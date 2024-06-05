@@ -3,7 +3,7 @@
 import sys
 from optparse import OptionParser
 
-from pagerduty import PagerDuty, PagerDutyException
+from upagerduty import PagerDuty, PagerDutyException
 
 def build_opt_parser():
     parser = OptionParser(usage="Usage: %prog [options] <trigger/acknowledge/resolve>")

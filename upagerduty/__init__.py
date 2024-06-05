@@ -12,7 +12,7 @@ from urllib.request import urlopen
 
 import base64
 
-from pagerduty.version import VERSION
+from upagerduty.version import VERSION
 
 __version__ = VERSION
 
